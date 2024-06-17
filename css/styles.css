@@ -1,0 +1,119 @@
+:root {
+    /* Cores */
+    --color-primary: #4CAF50;
+    --color-primary-dark: #45a049;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-background: #f0f4f8;
+    --color-modal-background: rgba(0,0,0,0.5);
+    --color-modal-content: #fefefe;
+  
+    /* Fontes */
+    --font-family: 'Arial', sans-serif;
+    --font-size-base: 16px;
+    --font-size-large: 28px;
+  
+    /* Espaçamento */
+    --spacing-small: 8px;
+    --spacing-medium: 16px;
+    --spacing-large: 24px;
+  
+    /* Bordas */
+    --border-radius: 4px;
+  
+    /* Sombras */
+    --box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  
+    /* Transições */
+    --transition-speed: 0.3s;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    background-color: var(--color-background);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: var(--font-size-base);
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  h1 {
+    color: var(--color-text);
+    margin-bottom: var(--spacing-large);
+  }
+  
+  .btn {
+    background-color: var(--color-primary);
+    color: white;
+    padding: var(--spacing-medium) var(--spacing-large);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: var(--font-size-base);
+    transition: background-color var(--transition-speed);
+  }
+  
+  .btn:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-modal-background);
+  }
+  
+  .modal-content {
+    background-color: var(--color-modal-content);
+    margin: 15% auto;
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .close {
+    color: var(--color-text-light);
+    float: right;
+    font-size: var(--font-size-large);
+    font-weight: bold;
+    cursor: pointer;
+    transition: color var(--transition-speed);
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: var(--color-text);
+  }
+  
+  h2 {
+    color: var(--color-text);
+    margin-top: 0;
+  }
+  
+  p {
+    color: var(--color-text-light);
+    line-height: 1.6;
+  }
+  
+  ul {
+    color: var(--color-text-light);
+    padding-left: var(--spacing-large);
+  }
+  
+  li {
+    margin-bottom: var(--spacing-small);
+  }
